@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = [12, 43, 2, 23, 12, 22, 62, 23];
+    let a;
+    function xapsep() {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    a = arr[i]
+                    arr [i] = arr [j]
+                    arr[j] = a
+                }
+            }
+        }
+        document.write(arr);
+    }
+    xapsep();
+</script>
+</body>
+</html>

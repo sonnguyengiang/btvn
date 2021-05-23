@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [12, 18, 24, 25, 21, 56, 53];
+    function xoa() {
+        let index = parseInt(prompt("nhập vị trí cần xóa"));
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == arr[index]) {
+                arr[i] = '';
+                alert(arr);
+            }
+
+        }
+    }
+
+    xoa()
+</script>
+</body>
+</html>
